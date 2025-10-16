@@ -20,12 +20,12 @@ To preserve South African culinary heritage by helping the next generation learn
 
   
 ## 🧩 Tech Stack
-- ** 🎨 Frontend:** React , TypeScript, Tailwind CSS, Vite, shadcn/ui, Lucide React
-- ** ⚙️ Backend:** Java, Framework, Springboot  
-- ** 🛢️ Database:** JDBC SQL
-- ** 🧠 AI Integration:** Multilingual Voiceovers - Text-to-speech AI (ElevenLabs/OpenAI),Dynamic Stories - Generate culturally relevant folktales and adapt content for             different ages, Smart Learning - Personalize badge recommendations based on progress (Future Features)
-- ** 🔗 API Integration:** User Accounts & Progress Tracking, Multilingual Voiceovers,  Classroom Mode (teachers tracking students), 
-- ** 🤖 Copilot:** Microsoft Copilot for code generation, refactoring, and debugging
+- 🎨 **Frontend:** React , TypeScript, Tailwind CSS, Vite, shadcn/ui, Lucide React
+- ⚙️ **Backend:** Java, Framework, Springboot  
+- 🛢️ **Database:** JDBC SQL
+- 🧠 **AI Integration:** Multilingual Voiceovers - Text-to-speech AI (ElevenLabs/OpenAI),Dynamic Stories - Generate culturally relevant folktales and adapt content for             different ages, Smart Learning - Personalize badge recommendations based on progress (Future Features)
+- 🔗 **API Integration:** User Accounts & Progress Tracking, Multilingual Voiceovers,  Classroom Mode (teachers tracking students), 
+- 🤖 **Copilot:** Microsoft Copilot for code generation, refactoring, and debugging
 
 ## Installation  
 To run this project locally, follow these steps:  
