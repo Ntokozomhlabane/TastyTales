@@ -22,13 +22,13 @@ const Index = () => {
       <Hero />
       
       {/* Games Section */}
-      <section id="games" className="py-16 px-4 bg-muted/30">
+      <section id="games" className="py-16 px-4 bg-muted/30 ">
         <div className="container mx-auto">
           <div className="text-center mb-12 space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold">
+            <h2 className="text-4xl md:text-5xl font-bold font-fredoka">
               Play & Learn 🎮
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground font-fredoka">
               Cook traditional dishes and discover their stories!
             </p>
           </div>
@@ -38,7 +38,8 @@ const Index = () => {
               title="Make Pap!"
               description="Learn to cook South Africa's favorite staple dish with the perfect ingredients."
               image={papIcon}
-              difficulty="easy"
+  
+              difficulty="easy" 
               onClick={() => setShowCookingGame(true)}
             />
             
@@ -72,23 +73,23 @@ const Index = () => {
       <BadgeDisplay />
 
       {/* Classroom Mode Section */}
-      <section id="classroom" className="py-16 px-4 bg-gradient-card">
+      <section id="classroom" className="py-16 px-4 bg-gradient-card bg-[#B367E0]">
         <div className="container mx-auto text-center space-y-8">
           <div className="inline-block p-4 bg-card/80 rounded-full">
             <GraduationCap className="h-16 w-16 text-secondary" />
           </div>
           
           <div className="space-y-4 max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-secondary-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold text-secondary-foreground font-fredoka">
               Classroom Mode
             </h2>
-            <p className="text-xl text-secondary-foreground/80">
+            <p className="text-xl text-secondary-foreground/80 font-fredoka">
               Teachers! Use Yamiko to teach heritage, history, and nutrition in an engaging way.
               Track student progress and make learning fun!
             </p>
           </div>
           
-          <Button variant="secondary" size="xl" className="shadow-playful">
+          <Button variant="secondary" size="xl" className="shadow-playful font-fredoka">
             Learn More About Classroom Mode
           </Button>
         </div>
@@ -100,10 +101,10 @@ const Index = () => {
           <h3 className="text-2xl font-bold bg-gradient-rainbow bg-clip-text text-transparent">
             Yamiko
           </h3>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground font-fredoka">
             Learning culture through food, one dish at a time 🌈
           </p>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-muted-foreground font-fredoka">
             © 2025 TastyTales Education. Teaching South African heritage with love.
           </p>
         </div>

@@ -10,10 +10,10 @@ interface GameCardProps {
   onClick: () => void;
 }
 
-const difficultyColors = {
-  easy: "bg-gradient-success",
-  medium: "bg-primary",
-  hard: "bg-destructive",
+const difficultyStyles = {
+  easy: "bg-[#3CD27A] text-white font-[Fredoka] rounded-md",
+  medium: "bg-primary text-white font-[Fredoka] rounded-md",
+  hard: "bg-destructive text-white font-[Fredoka] rounded-md",
 };
 
 export const GameCard = ({ title, description, image, difficulty, onClick }: GameCardProps) => {
@@ -25,16 +25,22 @@ export const GameCard = ({ title, description, image, difficulty, onClick }: Gam
           alt={title}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
-        <div className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-semibold text-white ${difficultyColors[difficulty]}`}>
+        <div
+          className={`absolute top-3 right-3 px-3 py-1 text-xs font-semibold ${difficultyStyles[difficulty]}`}
+        >
           {difficulty}
         </div>
       </div>
-      
+
       <div className="p-6 space-y-4">
         <h3 className="text-2xl font-bold text-card-foreground">{title}</h3>
         <p className="text-muted-foreground">{description}</p>
-        
-        <Button onClick={onClick} className="w-full group-hover:animate-pop" variant="default">
+
+        <Button
+          onClick={onClick}
+          className="w-full group-hover:animate-pop"
+          variant="default"
+        >
           <Play className="mr-2 h-4 w-4" />
           Play Game
         </Button>

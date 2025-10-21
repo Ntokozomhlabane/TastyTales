@@ -30,7 +30,7 @@ const stories = [
 
 export const StorySection = () => {
   return (
-    <section id="stories" className="py-16 px-4 relative overflow-hidden">
+    <section id="stories" className="py-16 px-4 relative overflow-hidden font-fredoka">
       <div className="absolute inset-0 opacity-10">
         <img src={storyBg} alt="" className="w-full h-full object-cover" />
       </div>
@@ -38,11 +38,11 @@ export const StorySection = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
-            <span className="bg-gradient-card bg-clip-text text-transparent">
+            <span className="bg-gradient-card bg-clip-text font-fredoka">
               Cultural Stories
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground font-fredoka">
             Every dish tells a story! Learn about South African heritage through food 📖
           </p>
         </div>

@@ -29,6 +29,16 @@ export const CookingGame = ({ onClose }: CookingGameProps) => {
   const [isComplete, setIsComplete] = useState(false);
 
   const handleIngredientClick = (id: string) => {
+    const ingredient = ingredients.find(i => i.id === id);
+    if (!ingredient) return;
+
+    // Disallow adding non-required ingredients
+    if (!ingredient.required) {
+      toast.error("No — try again.");
+      return;
+    }
+
+    // Allow toggle only for required ingredients
     if (selectedIngredients.includes(id)) {
       setSelectedIngredients(selectedIngredients.filter(i => i !== id));
     } else {
@@ -65,7 +75,7 @@ export const CookingGame = ({ onClose }: CookingGameProps) => {
                 Make Traditional Pap! 🥣
               </h2>
               <p className="text-muted-foreground mt-2">
-                Drag and drop the right ingredients to make delicious pap
+                Click the right ingredients to make delicious pap
               </p>
             </div>
             <Button variant="ghost" size="icon" onClick={onClose}>

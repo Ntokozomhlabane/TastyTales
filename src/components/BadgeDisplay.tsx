@@ -27,13 +27,13 @@ export const BadgeDisplay = () => {
     <section id="badges" className="py-16 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold font-fredoka">
             Your{" "}
-            <span className="bg-gradient-success bg-clip-text text-transparent">
+            <span className="text-[#39D177] font-fredoka ">
               Cultural Badges
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground font-fredoka">
             You've earned {unlockedCount} out of {badges.length} badges! Keep learning! 🎉
           </p>
         </div>
