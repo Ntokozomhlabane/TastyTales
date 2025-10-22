@@ -130,7 +130,7 @@ export const CookingGame = ({ onClose }: CookingGameProps) => {
               </div>
 
               {isComplete ? (
-                <div className="p-6 rounded-xl bg-gradient-success text-accent-foreground text-center space-y-4 animate-bounce-in">
+              <div className="p-6 rounded-xl bg-green-500 text-white text-center space-y-4 animate-bounce-in">
                   <Trophy className="h-16 w-16 mx-auto animate-wiggle" />
                   <h4 className="text-2xl font-bold">You Did It!</h4>
                   <p>You've learned how to make traditional Pap!</p>
@@ -144,7 +144,7 @@ export const CookingGame = ({ onClose }: CookingGameProps) => {
                   onClick={handleCook}
                   disabled={selectedIngredients.length === 0}
                   className="w-full"
-                  variant="hero"
+                  // variant="hero"
                 >
                   Cook Pap! 🔥
                 </Button>
@@ -153,8 +153,8 @@ export const CookingGame = ({ onClose }: CookingGameProps) => {
           </div>
 
           <div className="p-4 rounded-lg bg-muted space-y-2">
-            <h4 className="font-semibold">Cultural Story:</h4>
-            <p className="text-sm text-muted-foreground">
+            <h4 className="font-semibold font-fredoka">Cultural Story:</h4>
+            <p className="text-sm text-muted-foreground font-fredoka">
               Pap is a traditional South African staple food made from maize meal. It's been eaten for generations 
               and brings families together at mealtimes. Different regions have their own special ways of making it!
             </p>
